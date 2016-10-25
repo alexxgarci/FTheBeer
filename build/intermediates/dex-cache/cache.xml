@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="9c4c3bc902450c39ed54de170db4fb12aea20a35">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-utils-24.2.1_aa42899065e92f71014a7eab03280eb1f337af96/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="867dad63c33388ff8c7644b236579355036d075f">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_848e4afc5f8ffc49f2368131355d308f8c8b737b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics-impl/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0efd1b44f47c134fb245914a1d54a55adbfc2f8d">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-impl-9.6.1_63d78e637fdd4078a2b2a8e60b098742459d970d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-core-utils/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="935a969265b2a166b2d20415423f5f6e90fe16e0">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_decb168137602c9c7c91c65263e90934f90a047f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-v4/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-v4-24.2.1_3a5470aea5a3796411020d87b87815864ed1bbf6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d5c731fc64c03dfe04d51134955b483551c35849">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-vector-drawable-24.2.1_f2446fcc56a40ac802cabaaf0a9de51dd915086f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.google.firebase/firebase-common/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1ef72e72bc0d05602c366582afa9439f58bb31d6">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-common-9.6.1_ed4e66f517c76483e5c5aa24211c61486b20e3e0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="0ecb4b595fa0f0f8018a149ace3ea6525624f94e">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-compat-24.2.1_ea80ccd6d1600af2cff20bbceb01248ef4f0a7d3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-tasks/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="4a36600281a648769411ef642c331851732bf29e">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-tasks-9.6.1_d1a729646254e55f323a27ac7e8aad0e58e7cf2b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth-base/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="465f40f840e583f8b7421a3aacf3fbf08c28f00a">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-base-9.6.1_3d0913d40c81784095bf7394736a233fd5165d54/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/appcompat-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="43b2dba6b5a0b14527961b75329d0b90025f15ea">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-appcompat-v7-24.2.1_438e3ca90e3643dc876bd29c512db015fda8243a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="af7582c6b327449c6d32518e6a10307860b7b5d6">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-base-9.6.1_cdb6ab9c96c6cff962fe275f48638f99beaa25c0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="09b462bbcb77650284bd6614f1a32f360ef369f8">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-media-compat-24.2.1_995bfce5b851007480d5449f122bee90bfa6c825/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.google.firebase/firebase-iid/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="1e14ebe1cda8491f152083e752ca5bf73cd37bff">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-iid-9.6.1_7fa3550a0791a304c620b1b31182dc63d19ca5dc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-core-ui/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e7f3132168957eefc46229fc32c3bd464642b71e">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-core-ui-24.2.1_0be6a305f73fff3c06d678f4a8cfbdc0bae7174c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7e4389bd133359a2ff88623ff1e4ff93d6e6f780">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_a202ccb38929d8d6fd32ac42bca0ef728d0caff5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="7521486d9bfd2cd9e756e0cf75ed7d97f2ce2d3b">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-recyclerview-v7-24.2.1_b0de40d45a893bfbb45dd9d6fbefc095a3e90986/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b909b69d5349a536be90986575824b11148bc6c6">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_1ec40dc713e413101f7683cdf3838cf80678bf3e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/24.2.1/support-annotations-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="8de3aafecbdf98a61db6427f008f2d515bcd2544">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/support-annotations-24.2.1_fae36aa56f6e1ff1c73894298844c65ad74204f7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-auth/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="da3f763afd39da1c947d9442847c837e9182a09f">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-auth-9.6.1_1ac152f190b9748ccb682e97280966117054f8d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.google.android.gms/play-services-basement/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="eccaaa9ffa6bb4bfbd2e870f01aaf69655d353be">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.android.gms-play-services-basement-9.6.1_f3776efa936304ba35cfeff23bf7f0360ad2796a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-media-compat/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="fbf8da429efd5ad21e02e3e5ecaa1efc4167878d">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_5268a0bef6af50528cc3e78ec6e59f08c1424f4c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.google.firebase/firebase-analytics/9.6.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="a1c351dc10b92d638da57f3a6513f87cfbdc9f83">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.google.firebase-firebase-analytics-9.6.1_9e845e61998ebe5376841d687d4392ba2541fbd3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-tasks/1.4.0/d85884acf6810a3bbbecb587f239005cbc846dc4/bolts-tasks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/bolts-tasks-1.4.0_fdec2ccf7abcb0fef3e238e58d8030654ce30f51/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/design/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e03f47f3d1017a093bb3239d4ec47c3447f40744">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-design-24.2.1_b74e2ba3b655b534c735141c99dbf13333158870/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/.gradle/caches/modules-2/files-2.1/com.parse/parse-android/1.13.1/5f645bf60e3b88ccc02bd2a4018c5e3ef2f77d0a/parse-android-1.13.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f645bf60e3b88ccc02bd2a4018c5e3ef2f77d0a">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/parse-android-1.13.1_fa7695bd4059dc5e8efc26899e14afdb9990b263/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/animated-vector-drawable/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="94bc1dfb84dcc8b6f6f8f7cc726d7b2dd39c1574">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-animated-vector-drawable-24.2.1_5944ed053c8cb88576b623ab1d0331687bcd4340/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="b9a1ac78ad7ef3abedc4a4b30cd92bcacb939d1f">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/com.android.support-support-fragment-24.2.1_bb3592bf228fd3135a347ce663e217ae7651b783/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/exploded-aar/com.android.support/support-fragment/24.2.1/jars/libs/internal_impl-24.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="5f64d657e838e8375135c0f6057a7ff8fab6a50e">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/internal_impl-24.2.1_e027170740d32dc1eec97929ccd69ac5f5cfa142/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="24.0.2"
+        sha1="e950d6dbf7d32864d664ad2113343c01e15aab59">
+        <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_afc57822750201011c365b34dbc57f5801953a46/classes.dex" />
+    </item>
+
+</items>

@@ -124,8 +124,8 @@ public class SignInActivity extends AppCompatActivity implements
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
-            //updateUI(true);
-            ParseObject gameScore = new ParseObject("GameScore");
+            updateUI(true);
+           /* ParseObject gameScore = new ParseObject("GameScore");
             gameScore.put("score", 1337);
             gameScore.put("playerName", "Sean Plott");
             gameScore.put("cheatMode", false);
@@ -144,7 +144,7 @@ public class SignInActivity extends AppCompatActivity implements
                         // something went wrong
                     }
                 }
-            });
+            });*/
         } else {
             // Signed out, show unauthenticated UI.
             //updateUI(false);
@@ -200,6 +200,7 @@ public class SignInActivity extends AppCompatActivity implements
 
     private void updateUI(boolean signedIn) {
         if (signedIn) {
+            findViewById(R.id.google_sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_in_and_log_in).setVisibility(View.GONE);
         } else {

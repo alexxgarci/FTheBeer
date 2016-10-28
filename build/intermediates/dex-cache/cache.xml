@@ -160,7 +160,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="b909b69d5349a536be90986575824b11148bc6c6">
+        sha1="779356c81031492b9c666d0500e7d83c5a48e370">
         <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run-bootstrap_1ec40dc713e413101f7683cdf3838cf80678bf3e/classes.dex" />
     </item>
     <item
@@ -268,7 +268,7 @@
         jumboMode="true"
         optimize="true"
         revision="24.0.2"
-        sha1="e950d6dbf7d32864d664ad2113343c01e15aab59">
+        sha1="0d606d3eb72af1c498441b5d2fa2ec74cd75fca8">
         <dex dex="/Users/Alex/Downloads/google-services/android/signin/app/build/intermediates/transforms/dex/debug/folders/1000/10/instant-run_afc57822750201011c365b34dbc57f5801953a46/classes.dex" />
     </item>
 

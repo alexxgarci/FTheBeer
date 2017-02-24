@@ -1,33 +1,33 @@
 {
   "project_info": {
-    "project_number": "441472544030",
-    "project_id": "default-demo-app-f93ac"
+    "project_number": "368170289143",
+    "project_id": "firebase-beerapp"
   },
   "client": [
     {
       "client_info": {
-        "mobilesdk_app_id": "1:441472544030:android:27d689d63f1b7a06",
+        "mobilesdk_app_id": "1:368170289143:android:976ce4643976d1f6",
         "android_client_info": {
-          "package_name": "com.google.samples.quickstart.signin"
+          "package_name": "com.alex.beerapp"
         }
       },
       "oauth_client": [
         {
-          "client_id": "441472544030-007bmovt1c9iov601huv83rrsg8hgqit.apps.googleusercontent.com",
-          "client_type": 1,
-          "android_info": {
-            "package_name": "com.google.samples.quickstart.signin",
-            "certificate_hash": "7E1092CFA91D1C09A5501085E8CAA8E0DFE4493D"
-          }
+          "client_id": "368170289143-il5ndo33cr6t46b0aehfo0ed2jng2avn.apps.googleusercontent.com",
+          "client_type": 3
         },
         {
-          "client_id": "441472544030-kbljc9e2hbsti395cemk5spj4jo0s3kf.apps.googleusercontent.com",
-          "client_type": 3
+          "client_id": "368170289143-hjvfvg4ijkc02g1in1hghcgkps30uhdo.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.alex.beerapp",
+            "certificate_hash": "3fffacf2d4ddf265884fd23d7f0883bebc112205"
+          }
         }
       ],
       "api_key": [
         {
-          "current_key": "AIzaSyAqLdM3D6XVyLrJfq3vqr2ejhdJqFBOicM"
+          "current_key": "AIzaSyCb4qIiJQGiS_n6npv0S2rHGRGJOHIdJNA"
         }
       ],
       "services": {

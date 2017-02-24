@@ -1,9 +1,11 @@
-package com.google.samples.quickstart.signin;
+package com.alex.beerapp;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.test.suitebuilder.TestMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -43,7 +45,6 @@ public class SignInActivity extends AppCompatActivity implements
         // Button listeners
         findViewById(R.id.google_sign_in_button).setOnClickListener(this);
         findViewById(R.id.sign_in_button).setOnClickListener(this);
-        findViewById(R.id.log_in_button).setOnClickListener(this);
 
         // [START configure_signin]
         // Configure sign-in to request the user's ID, email address, and basic
@@ -71,7 +72,7 @@ public class SignInActivity extends AppCompatActivity implements
         // Scopes.PLUS_LOGIN scope to the GoogleSignInOptions to see the
         // difference.
         SignInButton signInButton = (SignInButton) findViewById(R.id.google_sign_in_button);
-        signInButton.setSize(SignInButton.SIZE_STANDARD);
+        signInButton.setSize(SignInButton.SIZE_WIDE);
         // [END customize_button]
     }
 
@@ -90,6 +91,7 @@ public class SignInActivity extends AppCompatActivity implements
             // If the user has not previously signed in on this device or the sign-in has expired,
             // this asynchronous branch will attempt to sign in the user silently.  Cross-device
             // single sign-on will occur in this branch.
+            //TODO create async Task to substitu this progress dialog
             showProgressDialog();
             opr.setResultCallback(new ResultCallback<GoogleSignInResult>() {
                 @Override
@@ -120,30 +122,10 @@ public class SignInActivity extends AppCompatActivity implements
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
-            updateUI(true);
-           /* ParseObject gameScore = new ParseObject("GameScore");
-            gameScore.put("score", 1337);
-            gameScore.put("playerName", "Sean Plott");
-            gameScore.put("cheatMode", false);
-            gameScore.saveInBackground();
-            id = gameScore.getObjectId();
-
-            ParseQuery<ParseObject> query = ParseQuery.getQuery("GameScore");
-            query.getInBackground(id, new GetCallback<ParseObject>() {
-                public void done(ParseObject object, ParseException e) {
-                    if (e == null) {
-                        ParseObject gameScore = new ParseObject("GameScore");
-                        int score = gameScore.getInt("score");
-                        String playerName = gameScore.getString("playerName");
-                        boolean cheatMode = gameScore.getBoolean("cheatMode");
-                    } else {
-                        // something went wrong
-                    }
-                }
-            });*/
+            updateUI(true, acct);
         } else {
             // Signed out, show unauthenticated UI.
-            //updateUI(false);
+            updateUI(false, null);
         }
     }
     // [END handleSignInResult]
@@ -194,13 +176,13 @@ public class SignInActivity extends AppCompatActivity implements
         }
     }
 
-    private void updateUI(boolean signedIn) {
+    private void updateUI(boolean signedIn,GoogleSignInAccount acct) {
         if (signedIn) {
             findViewById(R.id.google_sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
-            findViewById(R.id.sign_in_and_log_in).setVisibility(View.GONE);
-        } else {
-            mStatusTextView.setText(R.string.signed_out);
+            TextView textView = (TextView) findViewById(R.id.textViewSignedIn);
+            textView.setText("Signed in as "+acct.getDisplayName());
+            textView.setTextColor(Color.WHITE);
         }
     }
 
@@ -213,9 +195,9 @@ public class SignInActivity extends AppCompatActivity implements
             case R.id.sign_in_button:
 
                 break;
-            case R.id.log_in_button:
+            /*case R.id.log_in_button:
                 logIn();
-                break;
+                break;*/
         }
     }
 }

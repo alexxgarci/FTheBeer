@@ -90,6 +90,7 @@ public class SignInActivity extends AppCompatActivity implements
             // If the user has not previously signed in on this device or the sign-in has expired,
             // this asynchronous branch will attempt to sign in the user silently.  Cross-device
             // single sign-on will occur in this branch.
+            //TODO create async Task to substitu this progress dialog
             showProgressDialog();
             opr.setResultCallback(new ResultCallback<GoogleSignInResult>() {
                 @Override
@@ -121,29 +122,9 @@ public class SignInActivity extends AppCompatActivity implements
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
             updateUI(true);
-           /* ParseObject gameScore = new ParseObject("GameScore");
-            gameScore.put("score", 1337);
-            gameScore.put("playerName", "Sean Plott");
-            gameScore.put("cheatMode", false);
-            gameScore.saveInBackground();
-            id = gameScore.getObjectId();
-
-            ParseQuery<ParseObject> query = ParseQuery.getQuery("GameScore");
-            query.getInBackground(id, new GetCallback<ParseObject>() {
-                public void done(ParseObject object, ParseException e) {
-                    if (e == null) {
-                        ParseObject gameScore = new ParseObject("GameScore");
-                        int score = gameScore.getInt("score");
-                        String playerName = gameScore.getString("playerName");
-                        boolean cheatMode = gameScore.getBoolean("cheatMode");
-                    } else {
-                        // something went wrong
-                    }
-                }
-            });*/
         } else {
             // Signed out, show unauthenticated UI.
-            //updateUI(false);
+            updateUI(false);
         }
     }
     // [END handleSignInResult]
@@ -195,13 +176,11 @@ public class SignInActivity extends AppCompatActivity implements
     }
 
     private void updateUI(boolean signedIn) {
-        if (signedIn) {
+        //if (signedIn) {
             findViewById(R.id.google_sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_in_and_log_in).setVisibility(View.GONE);
-        } else {
-            mStatusTextView.setText(R.string.signed_out);
-        }
+        //}
     }
 
     @Override

@@ -2,8 +2,10 @@ package com.alex.beerapp;
 
 import android.app.ProgressDialog;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.test.suitebuilder.TestMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -43,7 +45,6 @@ public class SignInActivity extends AppCompatActivity implements
         // Button listeners
         findViewById(R.id.google_sign_in_button).setOnClickListener(this);
         findViewById(R.id.sign_in_button).setOnClickListener(this);
-        findViewById(R.id.log_in_button).setOnClickListener(this);
 
         // [START configure_signin]
         // Configure sign-in to request the user's ID, email address, and basic
@@ -71,7 +72,7 @@ public class SignInActivity extends AppCompatActivity implements
         // Scopes.PLUS_LOGIN scope to the GoogleSignInOptions to see the
         // difference.
         SignInButton signInButton = (SignInButton) findViewById(R.id.google_sign_in_button);
-        signInButton.setSize(SignInButton.SIZE_STANDARD);
+        signInButton.setSize(SignInButton.SIZE_WIDE);
         // [END customize_button]
     }
 
@@ -121,10 +122,10 @@ public class SignInActivity extends AppCompatActivity implements
         if (result.isSuccess()) {
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
-            updateUI(true);
+            updateUI(true, acct);
         } else {
             // Signed out, show unauthenticated UI.
-            updateUI(false);
+            updateUI(false, null);
         }
     }
     // [END handleSignInResult]
@@ -175,12 +176,15 @@ public class SignInActivity extends AppCompatActivity implements
         }
     }
 
-    private void updateUI(boolean signedIn) {
-        //if (signedIn) {
+    private void updateUI(boolean signedIn,GoogleSignInAccount acct) {
+        if (signedIn) {
             findViewById(R.id.google_sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
-            findViewById(R.id.sign_in_and_log_in).setVisibility(View.GONE);
-        //}
+            TextView textView = (TextView) findViewById(R.id.textViewSignedIn);
+            textView.setText("Signed in!"+acct.getDisplayName());
+            textView.setTextColor(Color.WHITE);
+
+        }
     }
 
     @Override
@@ -192,9 +196,9 @@ public class SignInActivity extends AppCompatActivity implements
             case R.id.sign_in_button:
 
                 break;
-            case R.id.log_in_button:
+            /*case R.id.log_in_button:
                 logIn();
-                break;
+                break;*/
         }
     }
 }

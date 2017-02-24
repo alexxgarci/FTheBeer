@@ -181,9 +181,8 @@ public class SignInActivity extends AppCompatActivity implements
             findViewById(R.id.google_sign_in_button).setVisibility(View.GONE);
             findViewById(R.id.sign_in_button).setVisibility(View.GONE);
             TextView textView = (TextView) findViewById(R.id.textViewSignedIn);
-            textView.setText("Signed in!"+acct.getDisplayName());
+            textView.setText("Signed in as "+acct.getDisplayName());
             textView.setTextColor(Color.WHITE);
-
         }
     }
 

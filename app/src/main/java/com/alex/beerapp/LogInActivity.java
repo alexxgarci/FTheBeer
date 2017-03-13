@@ -5,7 +5,6 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.test.suitebuilder.TestMethod;
 import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
@@ -24,17 +23,14 @@ import com.google.android.gms.common.api.ResultCallback;
  * Activity to demonstrate basic retrieval of the Google user's ID, email address, and basic
  * profile.
  */
-public class SignInActivity extends AppCompatActivity implements
+public class LogInActivity extends AppCompatActivity implements
         GoogleApiClient.OnConnectionFailedListener,
         View.OnClickListener {
 
-    private static final String TAG = "SignInActivity";
+    private static final String TAG = "LogInActivity";
     private static final int RC_SIGN_IN = 9001;
 
-    private String id;
-
     private GoogleApiClient mGoogleApiClient;
-    private TextView mStatusTextView;
     private ProgressDialog mProgressDialog;
 
     @Override
@@ -44,19 +40,15 @@ public class SignInActivity extends AppCompatActivity implements
 
         // Button listeners
         findViewById(R.id.google_sign_in_button).setOnClickListener(this);
-        findViewById(R.id.sign_in_button).setOnClickListener(this);
+        findViewById(R.id.sign_up_button).setOnClickListener(this);
 
         // [START configure_signin]
-        // Configure sign-in to request the user's ID, email address, and basic
-        // profile. ID and basic profile are included in DEFAULT_SIGN_IN.
         GoogleSignInOptions gso = new GoogleSignInOptions.Builder(GoogleSignInOptions.DEFAULT_SIGN_IN)
                 .requestEmail()
                 .build();
         // [END configure_signin]
 
         // [START build_client]
-        // Build a GoogleApiClient with access to the Google Sign-In API and the
-        // options specified by gso.
         mGoogleApiClient = new GoogleApiClient.Builder(this)
                 .enableAutoManage(this /* FragmentActivity */, this /* OnConnectionFailedListener */)
                 .addApi(Auth.GOOGLE_SIGN_IN_API, gso)
@@ -64,13 +56,6 @@ public class SignInActivity extends AppCompatActivity implements
         // [END build_client]
 
         // [START customize_button]
-        // Customize sign-in button. The sign-in button can be displayed in
-        // multiple sizes and color schemes. It can also be contextually
-        // rendered based on the requested scopes. For example. a red button may
-        // be displayed when Google+ scopes are requested, but a white button
-        // may be displayed when only basic profile is requested. Try adding the
-        // Scopes.PLUS_LOGIN scope to the GoogleSignInOptions to see the
-        // difference.
         SignInButton signInButton = (SignInButton) findViewById(R.id.google_sign_in_button);
         signInButton.setSize(SignInButton.SIZE_WIDE);
         // [END customize_button]
@@ -123,6 +108,7 @@ public class SignInActivity extends AppCompatActivity implements
             // Signed in successfully, show authenticated UI.
             GoogleSignInAccount acct = result.getSignInAccount();
             updateUI(true, acct);
+
         } else {
             // Signed out, show unauthenticated UI.
             updateUI(false, null);
@@ -132,22 +118,22 @@ public class SignInActivity extends AppCompatActivity implements
 
     // [START googleSignIn]
     private void googleSignIn() {
-        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signInIntent, RC_SIGN_IN);
+        Intent gSignInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
+        startActivityForResult(gSignInIntent, RC_SIGN_IN);
     }
     // [END googleSignIn]
 
     // [START signIn]
     private void signIn() {
-        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signInIntent, RC_SIGN_IN);
+        Intent signInIntent = new Intent(this, SigInActivity.class);
+        startActivity(signInIntent);
     }
     // [END signIn]
 
     // [START logIn]
     private void logIn() {
-        Intent signInIntent = Auth.GoogleSignInApi.getSignInIntent(mGoogleApiClient);
-        startActivityForResult(signInIntent, RC_SIGN_IN);
+        /*Intent signInIntent;
+        startActivityForResult(signInIntent, RC_SIGN_IN);*/
     }
     // [END logIn]
 
@@ -179,7 +165,7 @@ public class SignInActivity extends AppCompatActivity implements
     private void updateUI(boolean signedIn,GoogleSignInAccount acct) {
         if (signedIn) {
             findViewById(R.id.google_sign_in_button).setVisibility(View.GONE);
-            findViewById(R.id.sign_in_button).setVisibility(View.GONE);
+            findViewById(R.id.sign_up_button).setVisibility(View.GONE);
             TextView textView = (TextView) findViewById(R.id.textViewSignedIn);
             textView.setText("Signed in as "+acct.getDisplayName());
             textView.setTextColor(Color.WHITE);
@@ -192,8 +178,8 @@ public class SignInActivity extends AppCompatActivity implements
             case R.id.google_sign_in_button:
                 googleSignIn();
                 break;
-            case R.id.sign_in_button:
-
+            case R.id.sign_up_button:
+                signIn();
                 break;
             /*case R.id.log_in_button:
                 logIn();

@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Sign-In Quickstart</string>
+    <string name="app_name">F The Beer</string>
     <string name="title_text">F The Beer</string>
 
     <!-- Sign-in status messages -->
@@ -33,6 +33,7 @@
     <string name="contacts_permission_rationale">Contacts access is needed in order to retrieve your email address.</string>
 
     <!-- Activity Names and Descriptions -->
+    <string name="name_log_in_activity">LogInActivity</string>
     <string name="name_sign_in_activity">SignInActivity</string>
     <string name="desc_sign_in_activity">Signing in, signing out, and revoking access.</string>
 

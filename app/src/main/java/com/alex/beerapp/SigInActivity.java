@@ -17,7 +17,7 @@ import com.google.firebase.auth.FirebaseUser;
 
 public class SigInActivity extends AppCompatActivity implements View.OnClickListener{
 
-    private String TAG = "SignInActivity";
+    public static final String TAG = "SignInActivity";
 
     private FirebaseAuth mAuth;
     private FirebaseAuth.AuthStateListener mAuthListener;

@@ -6,6 +6,7 @@ import android.widget.ImageView;
 import com.google.android.gms.auth.api.signin.GoogleSignInAccount;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 
 /**
  * Created by alex on 27/2/17.
@@ -24,6 +25,11 @@ public class User {
     //private TimeLine postsList;
     private ArrayList<User> followers;
     private ArrayList<User> followings;
+
+    public User(HashMap<String, String> arrayList) {
+        this.email = arrayList.get("email");
+        this.password = arrayList.get("password");
+    }
 
     public User(GoogleSignInAccount acct){
         this.name = acct.getGivenName();

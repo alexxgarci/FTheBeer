@@ -1,42 +1,100 @@
 package com.alex.beerapp;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.v7.app.AppCompatActivity;
+import android.util.Log;
 import android.view.View;
-import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.alex.beerapp.controller.OnChangeTextListener;
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+import com.google.firebase.auth.FirebaseUser;
 
 public class SigInActivity extends AppCompatActivity implements View.OnClickListener{
 
+    private String TAG = "SignInActivity";
+
+    private FirebaseAuth mAuth;
+    private FirebaseAuth.AuthStateListener mAuthListener;
+
     private EditText emailEditTextView;
-    private String email;
     private EditText passwordEdiTextView;
+
+    private String email;
     private String password;
-    private Button registerButtonView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_sig_in);
 
+        mAuth = FirebaseAuth.getInstance();
+
+        mAuthListener = new FirebaseAuth.AuthStateListener() {
+            @Override
+            public void onAuthStateChanged(@NonNull FirebaseAuth firebaseAuth) {
+                FirebaseUser user = firebaseAuth.getCurrentUser();
+                if (user != null) {
+                    // User is signed in
+                    Log.d(TAG, "onAuthStateChanged:signed_in:" + user.getUid());
+                } else {
+                    // User is signed out
+                    Log.d(TAG, "onAuthStateChanged:signed_out");
+                }
+            }
+        };
+
         emailEditTextView = (EditText) findViewById(R.id.editTextEmail);
+        passwordEdiTextView = (EditText) findViewById(R.id.editTextPassword);
 
         //Validate email with android email pattern
         emailEditTextView.addTextChangedListener(new OnChangeTextListener(this, emailEditTextView));
     }
 
     @Override
-    public void onClick(View v) {
-        email = emailEditTextView.getText().toString();
-        if (checkEmail()) {
-            password = passwordEdiTextView.getText().toString();
+    public void onStart() {
+        super.onStart();
+        mAuth.addAuthStateListener(mAuthListener);
+    }
+
+    @Override
+    public void onStop() {
+        super.onStop();
+        if (mAuthListener != null) {
+            mAuth.removeAuthStateListener(mAuthListener);
         }
     }
 
-    private boolean checkEmail(){
-        //query de email
-        return true;
+    @Override
+    public void onClick(View v) {
+        email = emailEditTextView.getText().toString();
+        password = passwordEdiTextView.getText().toString();
+
+        signUp();
+    }
+
+    /**
+     * Sign up with email and password.
+     */
+    private void signUp() {
+        mAuth.createUserWithEmailAndPassword(email, password)
+                .addOnCompleteListener(this, new OnCompleteListener<AuthResult>() {
+                    @Override
+                    public void onComplete(@NonNull Task<AuthResult> task) {
+                        Log.d(TAG, "createUserWithEmail:onComplete:" + task.isSuccessful());
+
+                        // If sign in fails, display a message to the user. If sign in succeeds
+                        // the auth state listener will be notified and logic to handle the
+                        // signed in user can be handled in the listener.
+                        if (!task.isSuccessful()) {
+                            Toast.makeText(SigInActivity.this, R.string.auth_failed, Toast.LENGTH_SHORT).show();
+                        }
+                    }
+                });
     }
 }
